@@ -2,12 +2,14 @@ import { motion } from "framer-motion"
 
 type Props= {
     color: String
+    className: String
 }
 
-export const BoxRotate = ({ color }: Props) => {
+export const BoxRotate = ({ color, className }: Props) => {
     return(
         <motion.h1
-      className= { ` h-20 w-20 rounded mr-10 ${color} ` }
+      className= { ` h-10 w-10 rounded mr-10 ${color} ${className} ` }
+      
       animate={{
         scale: [1, 2, 2, 1, 1],
         rotate: [0, 0, 180, 180, 0],
@@ -17,9 +19,9 @@ export const BoxRotate = ({ color }: Props) => {
         duration: 2,
         ease: "easeInOut",
         times: [0, 0.2, 0.5, 0.8, 1],
-        repeat: Infinity,
-        repeatDelay: 10
       }}
+      whileHover={ { scale: 1.2 }}
+      
       />
     )
 }
