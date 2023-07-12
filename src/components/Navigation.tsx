@@ -1,6 +1,6 @@
 export const Navigation = () => {
     return(
-        <div className="flex justify-start  items-start h-14 w-full  fixed">
+        <div className="flex justify-start  items-start h-14 w-full mb-14 fixed">
             <div className="flex h-full w-full items-center justify-center bg-slate-400">
                 <div className="cursor-pointer ">Logo</div>
             </div>
