@@ -12,6 +12,7 @@ export default function Home() {
     
     <div className="bg-gray-600 h-screen w-screen">
       
+      <Navigation />
       <Link href="/Inicio" className="my-32 bg-black">Home</Link>
       
       <div className="h-14"></div>
