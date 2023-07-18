@@ -29,10 +29,10 @@ export const Navigation = () => {
                 {navClicked &&
                 <div className="h-screen w-32 bg-gray-800">
                     <ul className="flex flex-col">
-                        <li className="hover:text-stone-400">Home</li>
-                        <li className="hover:text-stone-400">Projetos</li>
-                        <li className="hover:text-stone-400">About-me</li>
-                        <li className="hover:text-stone-400">Contato</li>
+                        <li className="hover:text-stone-400"><a href="">Home</a></li>
+                        <li className="hover:text-stone-400"><a href="">Projetos</a></li>
+                        <li className="hover:text-stone-400"><a href="">About-me</a></li>
+                        <li className="hover:text-stone-400"><a href="">Contato</a></li>
                     </ul>
                 </div>
                 }   
