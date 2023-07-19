@@ -22,20 +22,20 @@ export const Navigation = () => {
             onClick={useClickNav}
             className="flex flex-col h-full pl-5 items-center justify-center cursor-pointer">
                 {!navClicked &&
-                <div className="flex items-center flex-col justify-center">
+                <div className="flex items-center pr-7 flex-col justify-center">
                     <div className={ cssNav }> </div>
                     <div className={ cssNav }> </div>
                     <div className={ cssNav }> </div>
                 </div>
                 }
                 {navClicked &&
-                <div className="w-32 block">
+                <div className="w-60 mt-64 ">
                     <ul className="flex flex-col">
-                        <button className="hover:text-stone-400 text-right pr-4" onClick={useClickNav}>x</button>
-                        <li className="hover:text-stone-400 my-2"><Link href="/">Home</Link></li>
-                        <li className="hover:text-stone-400 my-2"><Link href="/Projetos">Projetos</Link></li>
-                        <li className="hover:text-stone-400 my-2"><Link href="/Aboutme">About-me</Link></li>
-                        <li className="hover:text-stone-400 my-2"><Link href="/Contato">Contato</Link></li>
+                        <button className="hover:text-stone-400 text-right pr-4 text-4xl" onClick={useClickNav}>x</button>
+                        <li className="hover:text-stone-400 my-5 hover:text-2xl hover:scale-110 hover:duration-150"><Link href="/">Home</Link></li>
+                        <li className="hover:text-stone-400 my-5 hover:text-2xl hover:scale-110 hover:duration-150"><Link href="/Projetos">Projetos</Link></li>
+                        <li className="hover:text-stone-400 my-5 hover:text-2xl hover:scale-110 hover:duration-150"><Link href="/Aboutme">About-me</Link></li>
+                        <li className="hover:text-stone-400 my-5 hover:text-2xl hover:scale-110 hover:duration-150"><Link href="/Contato">Contato</Link></li>
                     </ul>
                 </div>
                 }   
