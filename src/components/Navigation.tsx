@@ -1,4 +1,6 @@
+import Link from "next/link"
 import { useState } from "react"
+
 
 export const Navigation = () => {
 
@@ -11,10 +13,10 @@ export const Navigation = () => {
     return(
         <div className="flex justify-start h-14 items-start mr-10 w-full mb-14 fixed">
             <div className="flex ml-20 h-full w-full items-center justify-around  text-2xl">
-                <div className={cssHead}><a href="/">Home</a></div>
-                <div className={cssHead}><a href="/Projetos">Projetos</a></div>
-                <div className={cssHead}><a href="/Aboutme">About-me</a></div>
-                <div className={cssHead}><a href="/Contato">Contato</a></div>
+                <div className={cssHead}><Link href={"/"}>Home</Link></div>
+                <div className={cssHead}><Link href="/Projetos">Projetos</Link></div>
+                <div className={cssHead}><Link href="/Aboutme">About-me</Link></div>
+                <div className={cssHead}><Link href="/Contato">Contato</Link></div>
             </div>
             <button 
             onClick={useClickNav}
@@ -30,10 +32,10 @@ export const Navigation = () => {
                 <div className="w-32 block">
                     <ul className="flex flex-col">
                         <button className="hover:text-stone-400 text-right pr-4" onClick={useClickNav}>x</button>
-                        <li className="hover:text-stone-400 my-2"><a href="/">Home</a></li>
-                        <li className="hover:text-stone-400 my-2"><a href="/Projetos">Projetos</a></li>
-                        <li className="hover:text-stone-400 my-2"><a href="/Aboutme">About-me</a></li>
-                        <li className="hover:text-stone-400 my-2"><a href="/Contato">Contato</a></li>
+                        <li className="hover:text-stone-400 my-2"><Link href="/">Home</Link></li>
+                        <li className="hover:text-stone-400 my-2"><Link href="/Projetos">Projetos</Link></li>
+                        <li className="hover:text-stone-400 my-2"><Link href="/Aboutme">About-me</Link></li>
+                        <li className="hover:text-stone-400 my-2"><Link href="/Contato">Contato</Link></li>
                     </ul>
                 </div>
                 }   
