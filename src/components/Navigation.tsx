@@ -3,7 +3,7 @@ import { useState } from "react"
 export const Navigation = () => {
 
     const [navClicked, useNavClicked] = useState(false)
-    const clickNav = () => {
+    const useClickNav = () => {
         useNavClicked(!navClicked)
     }
     const cssHead:string = 'cursor-pointer hover:text-black hover:underline hover:pb-4 hover:transition hover:duration-500'
@@ -17,7 +17,7 @@ export const Navigation = () => {
                 <div className={cssHead}><a href="/Contato">Contato</a></div>
             </div>
             <button 
-            onClick={clickNav}
+            onClick={useClickNav}
             className="flex flex-col h-full pl-5 items-center justify-center cursor-pointer">
                 {!navClicked &&
                 <div className="flex items-center flex-col justify-center">
@@ -29,7 +29,7 @@ export const Navigation = () => {
                 {navClicked &&
                 <div className="w-32 block">
                     <ul className="flex flex-col">
-                        <button className="hover:text-stone-400 text-right pr-4" onClick={clickNav}>x</button>
+                        <button className="hover:text-stone-400 text-right pr-4" onClick={useClickNav}>x</button>
                         <li className="hover:text-stone-400 my-2"><a href="/">Home</a></li>
                         <li className="hover:text-stone-400 my-2"><a href="/Projetos">Projetos</a></li>
                         <li className="hover:text-stone-400 my-2"><a href="/Aboutme">About-me</a></li>
