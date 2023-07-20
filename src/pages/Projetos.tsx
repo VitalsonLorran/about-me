@@ -1,5 +1,10 @@
+import Link from "next/link";
+
 export default function Projetos () {
     return (
-        <div>Aqui está a página de Projetos</div>
+        <div>
+            Aqui estão todos os meus projetos:
+            <Link href={"/"}>Home</Link>
+        </div>
     )
 }
