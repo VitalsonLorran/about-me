@@ -14,7 +14,7 @@ export const Navigation = () => {
         <div className="flex justify-start h-14 items-start mr-10 w-full mb-14 fixed">
             <div className="flex ml-20 h-full w-full items-center justify-around  text-2xl">
                 <div className={cssHead}><Link href={"/"}>Home</Link></div>
-                <div className={cssHead}><Link href="/Projetos">Projetos</Link></div>
+                <div className={cssHead}><Link href="pages/Projetos">Projetos</Link></div>
                 <div className={cssHead}><Link href="/Aboutme">About-me</Link></div>
                 <div className={cssHead}><Link href="/Contato">Contato</Link></div>
             </div>

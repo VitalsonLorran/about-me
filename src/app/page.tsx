@@ -3,9 +3,10 @@
 import { BoxRotate } from "@/components/BoxRotate";
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
-import { motion } from "framer-motion"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Link from "next/link";
+import Aboutme from "./pages/Aboutme";
+import Contato from "./pages/Contato";
+import Projetos from "./pages/Projetos";
+
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <div className="bg-gray-600 h-screen w-screen">
       
       <Navigation />
+      
       
       <div className="h-14"></div>
       <BoxRotate color={"bg-black"}
