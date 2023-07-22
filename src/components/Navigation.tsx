@@ -1,6 +1,7 @@
 import Link from "next/link"
-import { useState } from "react"
-
+import { Component, useState } from "react"
+import { Rotas } from "./Rotas"
+import Projetos from "../../pages/Projetos/Projetos"
 
 export const Navigation = () => {
 
@@ -8,6 +9,8 @@ export const Navigation = () => {
     const useClickNav = () => {
         useNavClicked(!navClicked)
     }
+
+
     const cssHead:string = 'cursor-pointer hover:text-black hover:underline hover:pb-4 hover:transition hover:duration-500'
     const cssNav:string = 'w-8 border border-white my-1 '
     return(

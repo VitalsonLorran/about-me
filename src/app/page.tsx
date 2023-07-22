@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
 import Contato from "../../pages/api/Contato";
 import { Router } from "next/router";
-
+import { Rotas } from "@/components/Rotas";
 
 export default function Home() {
   return (
@@ -15,7 +15,8 @@ export default function Home() {
       <Navigation />
       <div className="h-14"></div>
       <div className="max-w-screen-xl m-auto bg-black">
-        Aqui vão as rotas
+        
+        
       </div>
       <BoxRotate color={"bg-black"}
       className ="absolute bottom-0 mb-10 ml-10"
