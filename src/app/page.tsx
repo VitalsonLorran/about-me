@@ -16,7 +16,7 @@ export default function Home() {
       <div className="h-14"></div>
       <div className="max-w-screen-xl m-auto bg-black">
         
-        Mudando aqui alguma coisa
+        Mudando aqui alguma coisa de novo...
       </div>
       <BoxRotate color={"bg-black"}
       className ="absolute bottom-0 mb-10 ml-10"
