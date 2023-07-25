@@ -1,30 +1,19 @@
 "use client"
 
-import { BoxRotate } from "@/components/BoxRotate";
-import { Footer } from "@/components/Footer";
-import { Navigation } from "@/components/Navigation";
-import Contato from "../../pages/api/Contato";
-import { Router } from "next/router";
-import { Rotas } from "@/components/Rotas";
+import { TopComponents } from "@/components/TopComponents";
+import { BottomComponents } from "@/components/BottomComponents";
 
 export default function Home() {
   return (
     
     <div className="bg-gray-600 h-screen w-screen">
       
-      <Navigation />
-      <div className="h-14"></div>
-      <div className="max-w-screen-xl m-auto bg-black">
+      <TopComponents />
+      <div className="max-w-screen-xl m-auto bg-black text-center p-10">
         
-        Mudando aqui alguma coisa de novo...
+        <p>Mudando aqui alguma coisa de novo...</p>
       </div>
-      <BoxRotate color={"bg-black"}
-      className ="absolute bottom-0 mb-10 ml-10"
-      />
-      <BoxRotate color={"bg-white"} 
-      className="absolute bottom-0 right-0 mb-10"
-      />
-      <Footer />
+      <BottomComponents />
     </div>
     
     )

@@ -1,7 +1,5 @@
 import Link from "next/link"
 import { Component, useState } from "react"
-import { Rotas } from "./Rotas"
-import Projetos from "../../pages/Projetos/Projetos"
 
 export const Navigation = () => {
 
