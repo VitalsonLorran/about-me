@@ -11,7 +11,7 @@ export default function Home() {
       <TopComponents />
       <div className="max-w-screen-xl m-auto bg-black text-center p-10">
         
-        <p>Mudando aqui alguma coisa de novo...</p>
+        {window.location.pathname == "/" ? "deu certo": "nao deu certo"}
       </div>
       <BottomComponents />
     </div>

@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import { BottomComponents } from "../components/BottomComponents";
 import { TopComponents } from "../components/TopComponents";
