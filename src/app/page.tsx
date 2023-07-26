@@ -2,6 +2,7 @@
 
 import { TopComponents } from "@/components/TopComponents";
 import { BottomComponents } from "@/components/BottomComponents";
+import Projetos from "@/pages/Projetos";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <TopComponents />
       <div className="max-w-screen-xl m-auto bg-black text-center p-10">
         
-        {window.location.pathname == "/" ? "deu certo": "nao deu certo"}
+        {window.location.pathname == "/" ? "Início": ""}
       </div>
       <BottomComponents />
     </div>
