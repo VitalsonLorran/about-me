@@ -12,7 +12,7 @@ export default function Home() {
       <TopComponents />
       <div className="max-w-screen-xl m-auto bg-black text-center p-10">
         
-        {window.location.pathname == "/" ? "Início": ""}
+        {window.location.pathname == "/" ? "Início 1": ""}
       </div>
       <BottomComponents />
     </div>
