@@ -1,13 +1,11 @@
+"use client"
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { TopComponents } from '@/components/TopComponents'
+import { BottomComponents } from '@/components/BottomComponents'
 
-const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'VitalsonLorran.dev',
-  description: 'Meu portifólio',
-}
+
 
 export default function RootLayout({
   children,
@@ -16,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body>
+      <TopComponents />
+        <div className='text-center'>{children}</div>
+        <BottomComponents />
+      </body>
     </html>
   )
 }
