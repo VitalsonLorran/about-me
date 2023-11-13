@@ -2,7 +2,6 @@
 
 import { TopComponents } from "@/components/TopComponents";
 import { BottomComponents } from "@/components/BottomComponents";
-import Projetos from "@/pages/Projetos";
 
 export default function Home() {
   return (

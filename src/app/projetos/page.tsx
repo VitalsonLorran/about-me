@@ -1,10 +1,10 @@
 "use client"
 
 import Link from "next/link";
-import { BottomComponents } from "../components/BottomComponents";
-import { TopComponents } from "../components/TopComponents";
+import { BottomComponents } from "../../components/BottomComponents";
+import { TopComponents } from "../../components/TopComponents";
 
-export default function Projetos () {
+export default function Page () {
     return (
         <div className="bg-gray-600 h-screen w-screen">
             <TopComponents />
